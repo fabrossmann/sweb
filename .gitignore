@@ -22,6 +22,7 @@ sweb.kdev*
 .cdtbuild
 .idea
 cmake-build-*/*
+.vscode
 
 # OS-specific files
 *.DS_Store
