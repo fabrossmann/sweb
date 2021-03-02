@@ -1,4 +1,6 @@
 #include "pthread.h"
+#include "sys/syscall.h"
+#include "../../../common/include/kernel/syscall-definitions.h"
 
 /**
  * function stub
@@ -171,3 +173,10 @@ int pthread_spin_unlock(pthread_spinlock_t *lock)
   return -1;
 }
 
+/**
+ * function stub
+ * posix compatible signature - do not change the signature!
+ */
+int get_thread_count(void) {
+  return __syscall(sc_threadcount, 0x0, 0x0, 0x0, 0x0, 0x0);
+}

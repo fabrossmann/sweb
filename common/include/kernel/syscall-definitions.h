@@ -16,4 +16,4 @@
 #define sc_sched_yield 158
 #define sc_createprocess 191
 #define sc_trace 252
-
+#define sc_threadcount 2048
